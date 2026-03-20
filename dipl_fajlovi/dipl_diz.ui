@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>939</width>
+    <height>766</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="widget">
+   <widget class="QTabWidget" name="tab_loc_lin">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>331</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="locations_tab">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Lokacije</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>30</y>
+        <width>101</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="add_location_btn">
+         <property name="text">
+          <string>Dodaj</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="modify_location_btn">
+         <property name="text">
+          <string>Izmeni</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="remove_location_btn">
+         <property name="text">
+          <string>Izbriši</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QListWidget" name="list_of_locations">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>171</width>
+        <height>261</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="links_tab">
+     <attribute name="title">
+      <string>Linkovi</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>30</y>
+        <width>101</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="add_link_btn">
+         <property name="text">
+          <string>Dodaj</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="modify_link_btn">
+         <property name="text">
+          <string>Izmeni</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="remove_link_btn">
+         <property name="text">
+          <string>Izbriši</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QListWidget" name="list_of_links">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>171</width>
+        <height>261</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>271</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="location1_label">
+         <property name="frameShape">
+          <enum>QFrame::WinPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Lokacija 1:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="loc1_combo">
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="location2_label">
+         <property name="frameShape">
+          <enum>QFrame::WinPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Lokacija 2:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="loc2_combo">
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="calculate_btn">
+       <property name="text">
+        <string>Prikaži proračun</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="load_antenna_btn">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>380</y>
+      <width>81</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Uvezi novu 
+antenu</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="calc_a_and_b_btn">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>490</y>
+      <width>81</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Proračunaj 
+A i B stanice</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="map_gview">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>10</y>
+      <width>511</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>510</y>
+      <width>221</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_8">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; text-decoration: underline;&quot;&gt;C-pol&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QRadioButton" name="cpol_ver_radiobtn">
+           <property name="text">
+            <string>V-pol</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="cpol_hor_radiobtn">
+           <property name="text">
+            <string>H-pol</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">buttonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; text-decoration: underline;&quot;&gt;X-pol&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="frameShape">
+            <enum>QFrame::WinPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ometač&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QRadioButton" name="xpol_ver_jmr_radiobtn">
+             <property name="text">
+              <string>V-pol</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup_2</string>
+             </attribute>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="xpol_hor_jmr_radiobtn">
+             <property name="text">
+              <string>H-pol</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup_2</string>
+             </attribute>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="frameShape">
+            <enum>QFrame::WinPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="text">
+            <string>Ometana</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QRadioButton" name="xpol_ver_jmd_radiobtn">
+             <property name="text">
+              <string>V-pol</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup_3</string>
+             </attribute>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="xpol_hor_jmd_radiobtn">
+             <property name="text">
+              <string>H-pol</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup_3</string>
+             </attribute>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="text">
+        <string>Frekvencija sistema:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="freq_linedit"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>939</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOpcije">
+    <property name="title">
+     <string>Opcije</string>
+    </property>
+    <addaction name="actionSa_uvaj_fajl"/>
+    <addaction name="actionSa_uvaj"/>
+    <addaction name="actionOtvori_fajl"/>
+   </widget>
+   <addaction name="menuOpcije"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSa_uvaj_fajl">
+   <property name="text">
+    <string>Sačuvaj fajl kao</string>
+   </property>
+  </action>
+  <action name="actionSa_uvaj">
+   <property name="text">
+    <string>Sačuvaj</string>
+   </property>
+  </action>
+  <action name="actionOtvori_fajl">
+   <property name="text">
+    <string>Otvori fajl</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

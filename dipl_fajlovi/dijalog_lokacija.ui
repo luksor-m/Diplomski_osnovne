@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>location_add_dialog</class>
+ <widget class="QDialog" name="location_add_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>344</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lokacija</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <widget class="QPushButton" name="add_location_btn">
+   <property name="geometry">
+    <rect>
+     <x>94</x>
+     <y>280</y>
+     <width>411</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Dodaj lokaciju</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>90</y>
+     <width>541</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="5">
+     <widget class="QLineEdit" name="lat_sec_linedit"/>
+    </item>
+    <item row="3" column="3">
+     <widget class="QLineEdit" name="long_min_linedit"/>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLabel" name="long_min_label">
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="text">
+       <string>Geografska dužina (minuti)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="lat_dgr_linedit"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="lat_dgr_label">
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="text">
+       <string>Geografska širina (stepeni)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="long_dgr_label">
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="text">
+       <string>Geografska dužina (stepeni)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QLabel" name="lat_sec_label">
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="text">
+       <string>Geografska širina (sekunde)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLineEdit" name="lat_min_linedit"/>
+    </item>
+    <item row="3" column="5">
+     <widget class="QLineEdit" name="long_sec_linedit"/>
+    </item>
+    <item row="2" column="5">
+     <widget class="QLabel" name="long_sec_label">
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="text">
+       <string>Geografska dužina (sekunde)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>50</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLineEdit" name="long_dgr_linedit"/>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="lat_min_label">
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="text">
+       <string>Geografska širina (minuti)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>50</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>141</width>
+     <height>49</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="location_name_label">
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="text">
+       <string>Ime lokacije</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="location_name_linedit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="cancel_location_btn">
+   <property name="geometry">
+    <rect>
+     <x>94</x>
+     <y>310</y>
+     <width>411</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Otkaži unos</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>location_name_linedit</tabstop>
+  <tabstop>lat_dgr_linedit</tabstop>
+  <tabstop>lat_min_linedit</tabstop>
+  <tabstop>lat_sec_linedit</tabstop>
+  <tabstop>long_dgr_linedit</tabstop>
+  <tabstop>long_min_linedit</tabstop>
+  <tabstop>long_sec_linedit</tabstop>
+  <tabstop>add_location_btn</tabstop>
+  <tabstop>cancel_location_btn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
